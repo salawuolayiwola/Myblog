@@ -1,0 +1,114 @@
+.blogBody {
+  width: 100%;
+  height: max-content;
+  padding: 0 5%;
+  margin: 2rem auto;
+}
+
+.blogBody .hero {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.blogBody .hero .wrapper {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  background-color: red;
+}
+
+/* .blogBody .hero .wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+} */
+
+.blogBody .hero .wrapper:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.blogBody .hero h1 {
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+}
+
+.blogBody .hero .back {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  z-index: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.blogBody .blogContent {
+  margin-top: 2rem;
+  height: max-content;
+  width: 100%;
+}
+
+.blogBody .blogContent .intro {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blogBody .blogContent .intro .author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.blogBody .blogContent .intro .userAvatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.blogBody .blogContent .blogText {
+  p {
+    text-align: justify;
+  }
+}
+
+.blogBody .blogContent button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  margin: 2rem 0;
+  margin-left: 5%;
+}
