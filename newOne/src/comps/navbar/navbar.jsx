@@ -25,7 +25,7 @@ const Navbar = () => {
           onClick={toggleMenu}
         >
           <Link to="/">Home</Link>
-          <Link to="/blogs">Blogs</Link>
+          <Link to="/blogs">Blog</Link>
           <Link to="/about_us">About</Link>
         </nav>
         <div className={styles.menu} onClick={toggleMenu}>
